@@ -8,6 +8,10 @@ document.querySelectorAll("details.auto-expand").forEach((details) => {
   let hovered = false;
   let focused = false;
   let pinned = false;
+  let openTimer = null;
+  let closeTimer = null;
+  const hoverOpenDelay = reduceMotion ? 0 : 260;
+  const hoverCloseDelay = reduceMotion ? 0 : 190;
 
   const syncOpenState = () => {
     details.open = hovered || focused || pinned;
@@ -15,15 +19,27 @@ document.querySelectorAll("details.auto-expand").forEach((details) => {
 
   details.addEventListener("pointerenter", (event) => {
     if (event.pointerType === "mouse" || event.pointerType === "pen") {
-      hovered = true;
-      syncOpenState();
+      window.clearTimeout(closeTimer);
+      window.clearTimeout(openTimer);
+      closeTimer = null;
+      openTimer = window.setTimeout(() => {
+        openTimer = null;
+        hovered = true;
+        syncOpenState();
+      }, hoverOpenDelay);
     }
   });
 
   details.addEventListener("pointerleave", (event) => {
     if (event.pointerType === "mouse" || event.pointerType === "pen") {
-      hovered = false;
-      syncOpenState();
+      window.clearTimeout(openTimer);
+      window.clearTimeout(closeTimer);
+      openTimer = null;
+      closeTimer = window.setTimeout(() => {
+        closeTimer = null;
+        hovered = false;
+        syncOpenState();
+      }, hoverCloseDelay);
     }
   });
 

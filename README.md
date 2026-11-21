@@ -1,6 +1,6 @@
-# Anirjit Saha | Digital Identity & Authorization
+# Anirjit Saha | Digital Identity, Trust & Authorization
 
-An interactive portfolio highlighting enterprise identity, authorization, cloud resilience, and delivery leadership.
+An interactive portfolio featuring enterprise identity, authorization, trust and privacy, cloud resilience, and agentic AI access controls.
 
 **Explore the live portfolio:** [anirjit.github.io/anirjit-saha-portfolio](https://anirjit.github.io/anirjit-saha-portfolio/)
 
