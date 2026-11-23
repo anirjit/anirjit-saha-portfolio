@@ -6,15 +6,46 @@
     <meta name="theme-color" content="#f6f4ee">
     <meta name="description" content="Anirjit Saha leads enterprise digital identity and authorization programs, with a focus on trusted access, privacy, and cloud resilience.">
     <title>Anirjit Saha | Digital Identity, Trust &amp; Authorization</title>
+    <link rel="canonical" href="https://anirjit.github.io/anirjit-saha-portfolio/">
+    <meta property="og:type" content="profile">
+    <meta property="og:site_name" content="Anirjit Saha">
+    <meta property="og:title" content="Anirjit Saha | Digital Identity, Trust &amp; Authorization">
+    <meta property="og:description" content="Enterprise identity and authorization programs: 140M+ identities migrated, 90% fewer fraud incidents, and policy-based access control at scale.">
+    <meta property="og:url" content="https://anirjit.github.io/anirjit-saha-portfolio/">
+    <meta property="og:image" content="https://anirjit.github.io/anirjit-saha-portfolio/assets/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Anirjit Saha. Identity that scales. Access that makes sense.">
+    <meta name="twitter:card" content="summary_large_image">
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Anirjit Saha",
+        "jobTitle": "Senior Consultant, Digital Identity",
+        "worksFor": { "@type": "Organization", "name": "Deloitte" },
+        "url": "https://anirjit.github.io/anirjit-saha-portfolio/",
+        "sameAs": ["https://www.linkedin.com/in/anirjitsaha"],
+        "knowsAbout": ["Identity and access management", "CIAM", "Policy-based access control", "Authorization", "Auth0", "Ping Identity", "Axiomatics"]
+      }
+    </script>
+    <script>
+      try {
+        var savedTheme = localStorage.getItem("theme");
+        if (!savedTheme && window.matchMedia("(prefers-color-scheme: dark)").matches) savedTheme = "dark";
+        if (savedTheme) document.documentElement.dataset.theme = savedTheme;
+      } catch (e) {}
+    </script>
     <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css?v=16d3eb3">
-    <script src="script.js?v=16d3eb3" defer></script>
+    <link rel="stylesheet" href="styles.css?v=23">
+    <script src="script.js?v=23" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
+    <div class="scroll-progress" aria-hidden="true"></div>
     <header class="site-header">
       <a class="wordmark" href="#top" aria-label="Anirjit Saha, home">
         <span class="wordmark-mark">AS</span>
@@ -26,7 +57,13 @@
         <a href="#expertise">Expertise</a>
         <a href="#about">About</a>
       </nav>
-      <a class="header-cta" href="mailto:xjetf15@gmail.com">Let's connect <span aria-hidden="true">↗</span></a>
+      <div class="header-actions">
+        <button class="theme-toggle" type="button" aria-label="Switch to dark theme" title="Toggle light / dark theme">
+          <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"></path></svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path></svg>
+        </button>
+        <a class="header-cta" href="mailto:xjetf15@gmail.com">Let's connect <span aria-hidden="true">↗</span></a>
+      </div>
     </header>
 
     <main id="main">
@@ -51,36 +88,39 @@
             <a class="button button-quiet" href="#expertise">Explore my focus <span aria-hidden="true">↘</span></a>
           </div>
         </div>
-        <div class="trust-visual" role="img" aria-label="Digital identity establishes who is asking, authorization governs the action, and privacy protects what matters">
+        <div class="trust-visual" aria-label="Illustration: requests from people, devices, services and AI agents each pass through one policy decision before any action">
           <div class="trust-visual-head">
             <span class="trust-visual-label">A TRUSTED ACCESS MODEL</span>
-            <span class="trust-visual-status"><span aria-hidden="true"></span> HUMAN-CENTERED</span>
+            <span class="trust-visual-status"><span aria-hidden="true"></span> ILLUSTRATIVE</span>
           </div>
-          <div class="trust-flow">
-            <div class="trust-step trust-step-identity">
-              <span class="trust-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="3.2"></circle><path d="M5.5 20v-1.5a6.5 6.5 0 0 1 13 0V20"></path></svg></span>
-              <span class="trust-step-copy"><span>01 / IDENTITY</span><strong>Know who is asking</strong></span>
-              <span class="trust-step-side">verified</span>
-            </div>
-            <span class="trust-connector" aria-hidden="true"></span>
-            <div class="trust-step trust-step-authorization">
-              <span class="trust-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m12 3 7 3v5c0 4.3-2.8 7.7-7 10-4.2-2.3-7-5.7-7-10V6z"></path><path d="m9 12 2 2 4-4"></path></svg></span>
-              <span class="trust-step-copy"><span>02 / AUTHORIZATION</span><strong>Allow the right action</strong></span>
-              <span class="trust-step-side">policy-led</span>
-            </div>
-            <span class="trust-connector" aria-hidden="true"></span>
-            <div class="trust-step trust-step-privacy">
-              <span class="trust-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="5" y="10" width="14" height="11" rx="2"></rect><path d="M8 10V7a4 4 0 0 1 8 0v3"></path><path d="M12 14v3"></path></svg></span>
-              <span class="trust-step-copy"><span>03 / PRIVACY</span><strong>Protect what matters</strong></span>
-              <span class="trust-step-side">bounded</span>
-            </div>
-          </div>
-          <div class="trust-visual-footer">
-            <span class="trust-footer-check" aria-hidden="true">✓</span>
-            <span class="trust-footer-copy"><strong>Trust in every decision</strong><small>Identity <i>/</i> authorization <i>/</i> privacy</small></span>
+          <svg class="access-map" viewBox="-180 -180 360 360" role="img" aria-label="Five requesters (employee, customer, service, AI agent, device) connected to a central policy decision point">
+            <circle class="map-orbit" r="125"></circle>
+            <circle class="map-ring map-ring-outer" r="78"></circle>
+            <circle class="map-ring map-ring-inner" r="58"></circle>
+            <g class="map-links">
+              <path d="M0 -125 L0 -40" data-sat="0"></path>
+              <path d="M118.9 -38.6 L38 -12.4" data-sat="1"></path>
+              <path d="M73.5 101.1 L23.5 32.4" data-sat="2"></path>
+              <path d="M-73.5 101.1 L-23.5 32.4" data-sat="3"></path>
+              <path d="M-118.9 -38.6 L-38 -12.4" data-sat="4"></path>
+            </g>
+            <g class="map-core">
+              <circle class="core-disc" r="40"></circle>
+              <g class="core-icon" transform="translate(-14 -14) scale(1.17)"><path d="m12 3 7 3v5c0 4.3-2.8 7.7-7 10-4.2-2.3-7-5.7-7-10V6z"></path><path class="core-mark" d="m9 12 2 2 4-4"></path></g>
+              <text class="map-core-label" y="62">POLICY</text>
+            </g>
+            <g class="map-sat" data-sat="0" transform="translate(0 -125)"><circle r="23"></circle><g class="sat-icon" transform="translate(-10 -10) scale(.83)"><circle cx="12" cy="8" r="3.2"></circle><path d="M5.5 20v-1.5a6.5 6.5 0 0 1 13 0V20"></path></g><text y="-33">Employee</text></g>
+            <g class="map-sat" data-sat="1" transform="translate(118.9 -38.6)"><circle r="23"></circle><g class="sat-icon" transform="translate(-10 -10) scale(.83)"><rect x="7" y="3" width="10" height="18" rx="2"></rect><path d="M11 18h2"></path></g><text y="40">Customer</text></g>
+            <g class="map-sat" data-sat="2" transform="translate(73.5 101.1)"><circle r="23"></circle><g class="sat-icon" transform="translate(-10 -10) scale(.83)"><path d="m8 7-5 5 5 5M16 7l5 5-5 5"></path></g><text y="40">Service</text></g>
+            <g class="map-sat" data-sat="3" transform="translate(-73.5 101.1)"><circle r="23"></circle><g class="sat-icon" transform="translate(-10 -10) scale(.83)"><path d="m12 3 1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8z"></path><path d="M19 16v4M17 18h4"></path></g><text y="40">AI agent</text></g>
+            <g class="map-sat" data-sat="4" transform="translate(-118.9 -38.6)"><circle r="23"></circle><g class="sat-icon" transform="translate(-10 -10) scale(.83)"><rect x="3" y="5" width="18" height="11" rx="1.5"></rect><path d="M2 20h20"></path></g><text y="40">Device</text></g>
+            <circle class="map-packet" r="4.5" cx="0" cy="0"></circle>
+          </svg>
+          <div class="decision-readout" aria-hidden="true">
+            <span class="decision-dot"></span>
+            <span class="decision-copy"><strong data-decision-title>One policy. Every request.</strong><small data-decision-detail>Identity <i>/</i> authorization <i>/</i> privacy</small></span>
           </div>
         </div>
-        <div class="hero-index" aria-hidden="true"><span>01</span><span class="index-line"></span><span>04</span></div>
       </section>
 
       <section class="impact-section section-wrap" id="impact" aria-labelledby="impact-title">
@@ -126,30 +166,33 @@
           <h2 id="experience-title">Making identity work<br>in the real world.</h2>
           <p>From modern CIAM journeys to the fine-grained decisions that protect enterprise systems.</p>
         </div>
+        <div class="filter-bar" role="group" aria-label="Filter experience by focus area">
+          <button class="filter-chip is-active" type="button" data-filter="all" aria-pressed="true">All work</button>
+          <button class="filter-chip" type="button" data-filter="authorization" aria-pressed="false">Authorization</button>
+          <button class="filter-chip" type="button" data-filter="ciam" aria-pressed="false">CIAM</button>
+          <button class="filter-chip" type="button" data-filter="decentralized" aria-pressed="false">Decentralized ID</button>
+          <button class="filter-chip" type="button" data-filter="workforce" aria-pressed="false">Workforce IAM</button>
+        </div>
         <div class="timeline">
-          <article class="timeline-item reveal">
-            <div class="timeline-date"><span>JUN 2026 - PRESENT</span></div>
+          <article class="timeline-item reveal" data-tags="authorization">
+            <div class="timeline-date"><span>JUN 2026 - PRESENT</span><strong class="date-stat">Current<small>PBAC program lead</small></strong></div>
             <div class="timeline-content">
               <div class="role-line">
                 <h3>Enterprise authorization</h3>
                 <span class="brand-lockup brand-axiomatics"><img class="brand-image" src="assets/brands/axiomatics.png" alt="" aria-hidden="true"><span>Axiomatics</span></span>
               </div>
               <p class="role-context">Global professional services firm <span>/</span> Senior Consultant</p>
-              <p>Leading an enterprise Axiomatics authorization program: attribute-driven policies and externalized decisions, supported by governed policy delivery and a resilient cloud architecture.</p>
+              <p class="role-summary">Leading an enterprise policy-based access control (PBAC) program that replaces static, role-only access with attribute-driven decisions.</p>
+              <ul class="role-points">
+                <li><strong>Policy as code</strong>Leading the team building a GitHub CI/CD pipeline for ALFA policies.</li>
+                <li><strong>Resilient by design</strong>Leading AWS deployment design for AuthHub and ADS, built for high availability and disaster recovery.</li>
+                <li><strong>Azure integration</strong>Entra ID apps and policies, MSAL demo flows, and Azure API Management as a gateway PEP for ADS.</li>
+              </ul>
               <div class="tag-list"><span>PBAC / ABAC</span><span>ALFA</span><span>GitHub CI/CD</span><span>AWS HA / DR</span></div>
-              <details class="project-expansion auto-expand">
-                <summary>Explore the platform leadership <span class="expand-indicator" aria-hidden="true">+</span></summary>
-                <div class="expand-copy">
-                  <p><strong>Policy as code:</strong> Leading the team building a GitHub DevOps CI/CD pipeline for ALFA policies in the Axiomatics PBAC implementation.</p>
-                  <p><strong>Cloud resilience:</strong> Leading AWS deployment design for Axiomatics AuthHub and ADS components, with a focus on high availability and disaster recovery.</p>
-                  <p><strong>Azure integration:</strong> Registering applications, managing Entra authentication policies, groups, and users, integrating MSAL into demo app flows, and using Azure API Management as a gateway PEP for ADS.</p>
-                  <p><strong>Authorization foundation:</strong> Designing attribute-driven policies and PDP / PEP integrations to move beyond static, role-only access. This policy model is also relevant to governing agent identities, delegated context, tools, and actions.</p>
-                </div>
-              </details>
             </div>
           </article>
-          <article class="timeline-item reveal">
-            <div class="timeline-date"><span>FEB - JUN 2026</span></div>
+          <article class="timeline-item reveal" data-tags="ciam">
+            <div class="timeline-date"><span>FEB - JUN 2026</span><strong class="date-stat">3 months<small>vs. typical 9</small></strong></div>
             <div class="timeline-content">
               <div class="role-line">
                 <h3>B2B CIAM implementation</h3>
@@ -159,15 +202,16 @@
                 </span>
               </div>
               <p class="role-context">Global automotive manufacturer <span>/</span> Solution Delivery Lead</p>
-              <p>Architected and launched a production B2B identity platform with organization-aware access, email invitations, delegated administration, adaptive MFA, and a self-service application portal. Delivered in three months against a typical nine-month cycle.</p>
+              <p class="role-summary">Architected and launched a production B2B identity platform in three months, against a typical nine.</p>
+              <ul class="role-points">
+                <li><strong>Secure onboarding</strong>Scoped email invitations replaced shared passwords.</li>
+                <li><strong>Delegated administration</strong>Organization-aware RBAC, self-service MFA, and adaptive authentication.</li>
+                <li><strong>One front door</strong>A self-service portal for account management, app entitlements, and one-click SSO.</li>
+              </ul>
               <div class="tag-list"><span>Organizations</span><span>SSO</span><span>Adaptive MFA</span><span>Solution architecture</span></div>
-              <details class="project-expansion auto-expand">
-                <summary>Explore the delivery details <span class="expand-indicator" aria-hidden="true">+</span></summary>
-                <div class="expand-copy"><p>Scoped email invitations replaced shared passwords. Organization-context RBAC supported delegated admin workflows, while the portal brought together account self-service, MFA, application entitlements, and one-click SSO. I led workshops across registration, sign-in, MFA, and integration design.</p></div>
-              </details>
             </div>
           </article>
-          <article class="timeline-item reveal">
+          <article class="timeline-item reveal" data-tags="decentralized ciam">
             <div class="timeline-date"><span>JAN - FEB 2026</span></div>
             <div class="timeline-content">
               <div class="role-line">
@@ -178,16 +222,17 @@
                 </span>
               </div>
               <p class="role-context">Practice development <span>/</span> Solution Delivery Lead</p>
-              <p>Built an orchestration framework for identity verification and verifiable credential issuance, plus an iOS sample app for QR verification, digital wallet linkage, and reusable credential authentication.</p>
+              <p class="role-summary">Built a reusable framework for identity verification and verifiable credential issuance.</p>
+              <ul class="role-points">
+                <li><strong>Orchestrated</strong>PingOne DaVinci connected with PingOne Verify and Credentials in a single journey.</li>
+                <li><strong>Proven in an iOS app</strong>QR verification, digital wallet linkage, and reusable credential sign-in.</li>
+                <li><strong>Plug and play</strong>Designed so teams can reuse credential-based verification across enterprise journeys.</li>
+              </ul>
               <div class="tag-list"><span>DaVinci</span><span>Verify</span><span>Credentials</span><span>iOS</span></div>
-              <details class="project-expansion auto-expand">
-                <summary>Explore the identity flow <span class="expand-indicator" aria-hidden="true">+</span></summary>
-                <div class="expand-copy"><p>The plug-and-play client framework connected PingOne DaVinci orchestration with PingOne Verify and Credentials. It was designed to make credential-based verification easier to reuse across enterprise journeys.</p></div>
-              </details>
             </div>
           </article>
-          <article class="timeline-item reveal">
-            <div class="timeline-date"><span>SEP 2023 - DEC 2025</span></div>
+          <article class="timeline-item reveal" data-tags="ciam authorization">
+            <div class="timeline-date"><span>SEP 2023 - DEC 2025</span><strong class="date-stat">140M+<small>identities migrated</small></strong></div>
             <div class="timeline-content">
               <div class="role-line">
                 <h3>Enterprise CIAM transformation</h3>
@@ -197,17 +242,18 @@
                 </span>
               </div>
               <p class="role-context">Global aviation carrier <span>/</span> Solution Delivery Advisor &amp; Lead</p>
-              <p>Led a multi-channel modernization, moving 140M+ identities from a private-cloud directory to PingOne cloud SaaS using PingOne DaVinci migration flows and Ping DataSync. Just-in-time moves peaked at 130K+ identities per day, with no service disruption. Delivered 19 authentication flows for 40+ capabilities across web, mobile, and contact center.</p>
-              <p>Introduced passwordless and adaptive authentication, native app SSO, and fine-grained authorization. Replacing legacy security questions and improving contact-center verification reduced fraud incidents by 90% and agent handle times by 74%.</p>
+              <p class="role-summary">Led a multi-channel CIAM modernization, moving 140M+ identities to PingOne cloud with no service disruption.</p>
+              <ul class="role-points">
+                <li><strong>Migration at scale</strong>PingOne DaVinci flows and Ping DataSync, with just-in-time moves peaking at 130K+ identities a day.</li>
+                <li><strong>Better sign-in</strong>19 authentication flows delivered 40+ capabilities across web, mobile, and contact center, including passwordless, PKCE, MFA, and delegated access.</li>
+                <li><strong>Lower risk</strong>Replacing security questions with MFA and TOTP, and improving contact-center verification, cut fraud incidents by 90% and handle times by 74%.</li>
+                <li><strong>Ahead of the curve</strong>Evaluated and integrated risk-based MFA, native iOS / Android SSO, and fine-grained authorization with Ping Authorize.</li>
+              </ul>
               <div class="tag-list"><span>PingDirectory</span><span>PingOne Cloud</span><span>DaVinci</span><span>Ping Authorize</span></div>
-              <details class="project-expansion auto-expand">
-                <summary>Explore the transformation <span class="expand-indicator" aria-hidden="true">+</span></summary>
-                <div class="expand-copy"><p>PingOne DaVinci flows orchestrated the migration journeys, while Ping DataSync synchronized identities from the private-cloud directory into PingOne's cloud SaaS directory. Just-in-time moves peaked at 130K+ per day without service disruption. Nineteen authentication flows enabled more than 40 capabilities, including passwordless enrollment, PKCE authentication, MFA, persistent sessions, and delegated multi-account access. Risk-based MFA and native iOS / Android SSO were also evaluated and integrated.</p></div>
-              </details>
             </div>
           </article>
-          <article class="timeline-item reveal">
-            <div class="timeline-date"><span>OCT 2020 - AUG 2023</span></div>
+          <article class="timeline-item reveal" data-tags="workforce">
+            <div class="timeline-date"><span>OCT 2020 - AUG 2023</span><strong class="date-stat">4,800+<small>manual requests / month removed</small></strong></div>
             <div class="timeline-content">
               <div class="role-line">
                 <h3>IAM modernization &amp; least privilege</h3>
@@ -217,15 +263,16 @@
                 </span>
               </div>
               <p class="role-context">Fortune 100 insurance &amp; financial services leader <span>/</span> Analyst to Associate</p>
-              <p>Automated identity operations across Active Directory, Quest, PowerShell, RPA, ServiceNow, and SailPoint, eliminating 4,800+ manual requests each month. Advanced administrative tiering and access controls across an environment with 100K+ managed entities.</p>
+              <p class="role-summary">Automated identity operations and tightened least privilege across 100K+ managed entities.</p>
+              <ul class="role-points">
+                <li><strong>Automation</strong>Connected AD, Quest, PowerShell, RPA, ServiceNow, and SailPoint, removing 4,800+ manual requests a month and lifting automation health from about 42% to over 50% in a year.</li>
+                <li><strong>Least privilege</strong>Drove administrative tiering and redesigned Windows Server access controls.</li>
+                <li><strong>Next steps scoped</strong>Just-in-time administrator access, group redesign, and privileged-access certification.</li>
+              </ul>
               <div class="tag-list"><span>Active Directory</span><span>PowerShell</span><span>SailPoint</span><span>Privileged access</span></div>
-              <details class="project-expansion auto-expand">
-                <summary>Explore the modernization work <span class="expand-indicator" aria-hidden="true">+</span></summary>
-                <div class="expand-copy"><p>Automation health improved from about 42% to over 50% within a year. I drove administrative tiering and redesigned Windows Server access controls, while scoping just-in-time administrator access, group redesign, and privileged-access certification.</p></div>
-              </details>
             </div>
           </article>
-          <article class="timeline-item reveal">
+          <article class="timeline-item reveal" data-tags="ciam">
             <div class="timeline-date"><span>JAN - APR 2020</span></div>
             <div class="timeline-content">
               <div class="role-line">
@@ -233,12 +280,13 @@
                 <span class="brand-lockup brand-forgerock"><img class="brand-image" src="assets/brands/ping.ico" alt="" aria-hidden="true"><span>ForgeRock</span></span>
               </div>
               <p class="role-context">Global logistics &amp; shipping leader <span>/</span> Analyst (Associate)</p>
-              <p>Implemented MFA and OAuth 2.0 authentication flows, containerized a multi-region CIAM deployment with Docker and Kubernetes, and configured LDAP password policies and federated sign-in.</p>
+              <p class="role-summary">Implemented MFA and OAuth 2.0 authentication for a global logistics leader.</p>
+              <ul class="role-points">
+                <li><strong>Authentication</strong>OAuth 2.0 authentication trees and MFA flows in ForgeRock AM.</li>
+                <li><strong>Multi-region</strong>Containerized the CIAM deployment with Docker and Kubernetes across EMEA, APAC, and AMER.</li>
+                <li><strong>Federation</strong>Custom ApacheDS LDAP password policies and federated social sign-in mapped to GCP APIs.</li>
+              </ul>
               <div class="tag-list"><span>ForgeRock AM</span><span>OAuth 2.0</span><span>Docker</span><span>Kubernetes</span></div>
-              <details class="project-expansion auto-expand">
-                <summary>Explore the implementation <span class="expand-indicator" aria-hidden="true">+</span></summary>
-                <div class="expand-copy"><p>Configured OAuth 2.0 authentication trees, custom ApacheDS LDAP password policies, and federated social sign-in mapped to GCP APIs across EMEA, APAC, and AMER deployment regions.</p></div>
-              </details>
             </div>
           </article>
         </div>
@@ -257,8 +305,8 @@
           <div class="agentic-copy">
             <p class="eyebrow">CURRENT FOCUS <span class="eyebrow-divider">/</span> AGENTIC AI AUTHORIZATION</p>
             <h3 id="agentic-title">When software can act, authorization must keep up.</h3>
-            <p>As I lead an enterprise PBAC program, I'm exploring how policy-driven authorization can govern AI agents acting on behalf of people and services, with identity, scope, and privacy tied to each decision.</p>
-            <p>In a PingOne Privilege workshop, I configured Endpoint Controller discovery and policies for personal-agent blocking, MCP server controls, and workstation kill switches for Claude and GitHub Copilot.</p>
+            <p>As I lead an enterprise PBAC program, I'm exploring how policy-driven authorization can govern AI agents acting for people and services, with identity, scope, and privacy tied to every decision.</p>
+            <p>In a PingOne Privilege workshop, I configured policies for personal-agent blocking, MCP server controls, and workstation kill switches for Claude and GitHub Copilot.</p>
             <details class="agentic-details auto-expand">
               <summary><span>Explore the authorization lens</span><span class="expand-indicator" aria-hidden="true">+</span></summary>
               <div class="expand-copy">
@@ -285,7 +333,7 @@
             <summary>
               <span class="card-number">01 / DOMAINS</span>
               <h3>Identity &amp; access</h3>
-              <p>CIAM and workforce IAM, SSO and federation, adaptive MFA, passkeys, IGA, access certification, PBAC / ABAC, decentralized identity, Zero Trust, and least privilege.</p>
+              <div class="chip-list"><span>CIAM</span><span>Workforce IAM</span><span>SSO &amp; federation</span><span>Adaptive MFA</span><span>Passkeys</span><span>IGA</span><span>Access certification</span><span>PBAC / ABAC</span><span>Decentralized identity</span><span>Zero Trust</span><span>Least privilege</span></div>
               <span class="expand-indicator" aria-hidden="true">+</span>
             </summary>
             <div class="expand-copy"><p>Additional depth: risk-based authentication, FIDO2 / WebAuthn, JIT access, fine-grained authorization, identity proofing, delegated access, and verifiable credentials.</p></div>
@@ -294,7 +342,7 @@
             <summary>
               <span class="card-number">02 / PLATFORMS</span>
               <h3>Platforms &amp; tools</h3>
-              <p>Auth0, Ping Identity, PingOne Privilege, PingOne Recognize, Axiomatics, ForgeRock AM, Microsoft Entra ID, Microsoft Active Directory, SailPoint, ServiceNow, Quest One Identity, and RPA.</p>
+              <div class="chip-list"><span>Auth0</span><span>Ping Identity</span><span>PingOne Privilege</span><span>PingOne Recognize</span><span>Axiomatics</span><span>ForgeRock AM</span><span>Entra ID</span><span>Active Directory</span><span>SailPoint</span><span>ServiceNow</span><span>Quest One</span></div>
               <span class="expand-indicator" aria-hidden="true">+</span>
             </summary>
             <div class="expand-copy">
@@ -306,7 +354,7 @@
             <summary>
               <span class="card-number">03 / PROTOCOLS</span>
               <h3>Standards &amp; protocols</h3>
-              <p>OAuth 2.0, OpenID Connect, SAML 2.0, PKCE, JWT, TOTP, FIDO2 / WebAuthn, Verifiable Credentials, LDAP, and PDP / PEP patterns.</p>
+              <div class="chip-list"><span>OAuth 2.0</span><span>OpenID Connect</span><span>SAML 2.0</span><span>PKCE</span><span>JWT</span><span>TOTP</span><span>FIDO2 / WebAuthn</span><span>Verifiable Credentials</span><span>LDAP</span><span>PDP / PEP</span></div>
               <span class="expand-indicator" aria-hidden="true">+</span>
             </summary>
             <div class="expand-copy"><p>Applied across browser, mobile, contact-center, and service-to-service journeys, including authorization-code flows, federation, passwordless authentication, and externalized policy decisions.</p></div>
@@ -315,7 +363,7 @@
             <summary>
               <span class="card-number">04 / CLOUD &amp; DELIVERY</span>
               <h3>Cloud &amp; policy delivery</h3>
-              <p>AWS cloud design, Microsoft Entra ID, Azure API Management, MSAL, GitHub-based CI/CD, Node.js, REST APIs, PowerShell, Docker, Kubernetes, GCP, and SQL Server.</p>
+              <div class="chip-list"><span>AWS</span><span>Entra ID</span><span>Azure API Management</span><span>MSAL</span><span>GitHub CI/CD</span><span>Node.js</span><span>REST APIs</span><span>PowerShell</span><span>Docker</span><span>Kubernetes</span><span>GCP</span><span>SQL Server</span></div>
               <span class="expand-indicator" aria-hidden="true">+</span>
             </summary>
             <div class="expand-copy"><p>Leading AWS deployment design for Axiomatics AuthHub and ADS with high availability and disaster recovery in mind, alongside GitHub DevOps CI/CD for ALFA policy-as-code. Entra experience includes app registrations, authentication policies, groups and users, MSAL demo flows, and Azure API Management as an ADS gateway PEP.</p></div>
@@ -324,7 +372,7 @@
             <summary>
               <span class="card-number">05 / CONSULTING</span>
               <h3>From strategy to launch</h3>
-              <p>Solution architecture, digital transformation, RFP / RFI development, pre-sales and vendor evaluation, workshops, stakeholder leadership, and Agile delivery.</p>
+              <div class="chip-list"><span>Solution architecture</span><span>Digital transformation</span><span>RFP / RFI</span><span>Pre-sales</span><span>Vendor evaluation</span><span>Workshops</span><span>Stakeholder leadership</span><span>Agile delivery</span></div>
               <span class="expand-indicator" aria-hidden="true">+</span>
             </summary>
             <div class="expand-copy"><p>Experience spans target-state architecture, client workshops, vendor assessment, proposals and pursuits, compressed delivery timelines, knowledge transfer, and IAM capability building.</p></div>
@@ -375,7 +423,7 @@
             </div>
             <h3>Consistency, recognized.</h3>
             <p>Top-box performer across all six performance cycles from 2020-2026, recognized for delivery excellence and sustained impact.</p>
-            <span class="about-outcome"><strong>10 awards</strong> <i>/</i> 1 Spot <i>/</i> 7 Applause <i>/</i> 2 Outstanding</span>
+            <span class="about-outcome"><strong>11 awards</strong> <i>/</i> 1 Spot <i>/</i> 7 Applause <i>/</i> 3 Outstanding</span>
           </article>
         </div>
         <div class="credentials reveal">
